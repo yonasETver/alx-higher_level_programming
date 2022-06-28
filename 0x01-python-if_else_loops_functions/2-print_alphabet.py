@@ -2,4 +2,4 @@
 i = ord('a')
 while i < ord('z') + 1:
     print("{:c}".format(i), end='')
-    i=i+1
+    i = i+1
