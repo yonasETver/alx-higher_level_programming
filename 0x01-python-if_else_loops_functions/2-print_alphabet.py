@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for i in range(ord('a'), ord('z') + 1):
-    print("{:s}".format(chr(i)), end="")
+i = ord('a')
+while i < ord('z') + 1:
+    print("{:c}".format(i), end='')
+    i+=1
