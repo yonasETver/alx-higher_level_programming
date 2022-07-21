@@ -6,8 +6,9 @@ A function that adds 2 integers a and b .
 def add_integer(a, b=98):
     """
     Add two integer 
-    Args: a - integer or float
-          b - integer or float
+    Args: 
+        a - integer or float
+        b - integer or float
     raise: - a and b must be integers or floats
              else raise type error exeption
     """
