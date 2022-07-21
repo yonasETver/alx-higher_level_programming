@@ -10,8 +10,9 @@ def matrix_divided(matrix, div):
     Args:
         matrix - list of element
         div - divisor
-    raise - defrent type eror else
-    return matrix division 
+    raise:
+        defrent type eror else return 
+        matrix division 
     """
      if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
