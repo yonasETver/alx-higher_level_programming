@@ -1,10 +1,7 @@
 #!/usr/bin/node
-const list = require('./100-data.js').list;
-// const newlist = [];
 
-const newlist = list.map((num, index) => {
-  // newlist.push(num * index);
-  return (num * index);
-});
-console.log(list);
-console.log(newlist);
+const factor = require('./100-data').list;
+
+const map1 = factor.map((index, list1) => index * list1);
+console.log(factor);
+console.log(map1);
