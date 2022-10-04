@@ -1,9 +1,6 @@
 #!/usr/bin/node
-
-'use strict';
-
-const fileSystem = require('fs');
-
-const firstArg = fileSystem.readFileSync(process.argv[2]).toString();
-const secondArg = fileSystem.readFileSync(process.argv[3]).toString();
-fileSystem.writeFileSync(process.argv[4], firstArg + secondArg);
+const fs = require('fs');
+const contentA = fs.readFileSync(process.argv[2], 'utf8', function (err, result) { if (err) console.log('error', err); });
+const contentB = fs.readFileSync(process.argv[3], 'utf8', function (err, result) { if (err) console.log('error', err); });
+const contentC = contentA.concat(contentB);
+fs.writeFile(process.argv[4], contentC, 'utf8', function (err, result) { if (err) console.log('error', err); });
